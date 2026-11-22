@@ -8,9 +8,9 @@ tooltip. This script:
 - shows every cost in **millicents** (m¢), where 100,000 m¢ = $1
   (e.g. `$0.00231` → `231 m¢`)
 - color-codes the values:
-  - green: below 100 m¢
-  - orange: 100–999 m¢
-  - red: 1,000 m¢ ($0.01) and above
+  - green: below 200 m¢
+  - orange: 200–1999 m¢
+  - red: 2,000 m¢ ($0.02) and above
 - adds a **Total** row summing all cost rows currently loaded on the page
 - keeps the original dollar value in the tooltip of each cell (and of the total)
 
@@ -35,8 +35,8 @@ The same steps work in Chrome and other browsers with Tampermonkey or Violentmon
 Edit the constants near the top of the script:
 
 ```js
-const SMALL_BELOW = 100;    // below this: green
-const LARGE_FROM  = 1000;   // from this on: red; in between: orange
+const SMALL_BELOW = 200;    // below this: green
+const LARGE_FROM  = 2000;   // from this on: red; in between: orange
 const COLORS = { small: '#2e9d4f', medium: '#d98a00', large: '#d43c3c' };
 ```
 

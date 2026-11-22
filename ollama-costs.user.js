@@ -13,8 +13,8 @@
   'use strict';
 
   // Thresholds in millicents (100000 m¢ = $1)
-  const SMALL_BELOW = 100;    // < 100 m¢ (< $0.001)  -> small
-  const LARGE_FROM  = 1000;   // >= 1000 m¢ (>= $0.01) -> large; in between -> medium
+  const SMALL_BELOW = 200;    // < 200 m¢ (< $0.002)  -> small
+  const LARGE_FROM  = 2000;   // >= 2000 m¢ (>= $0.02) -> large; in between -> medium
   const COLORS = { small: '#2e9d4f', medium: '#d98a00', large: '#d43c3c' };
 
   const toMillicents = title => parseFloat(title.replace(/[^0-9.\-]/g, '')) * 100000;
