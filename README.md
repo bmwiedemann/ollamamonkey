@@ -45,3 +45,7 @@ const COLORS = { small: '#2e9d4f', medium: '#d98a00', large: '#d43c3c' };
 - Cost cells are found by their `title="$..."` attribute. If ollama.com changes
   its HTML, the script may need updating.
 - The total only covers rows that are loaded on the page, not your full history.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

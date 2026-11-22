@@ -4,6 +4,7 @@
 // @version      2.0
 // @description  Show ollama.com/settings costs in millicents (1/100000 $), color-coded, with a total
 // @match        https://ollama.com/settings*
+// @license      MIT
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
